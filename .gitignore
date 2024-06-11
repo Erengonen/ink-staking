@@ -1,0 +1,25 @@
+# Ignore all target directories
+/target/
+**/target/
+target/
+**/dist/
+
+# Ignore design files and IDE configurations
+/design/
+.idea/
+.vite/
+node_modules/
+.DS_Store
+
+# Ignore timestamp files
+vite.config.ts.timestamp*
+
+# Ignore backup files created by cargo fmt
+**/*.rs.bk
+
+# Remove Cargo.lock when creating an executable, leave it for libraries
+# More information here http://doc.crates.io/guide.html#cargotoml-vs-cargolock
+Cargo.lock
+
+# Ignore history files.
+**/.history/**
